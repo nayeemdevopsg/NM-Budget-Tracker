@@ -1,0 +1,72 @@
+body{
+    padding: 100px;
+}
+
+.cl{
+    color: rgb(15, 133, 15);
+}
+
+#submit-area{
+    padding: 70px;
+    margin-top: 7%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#tracker-area{
+    display: none;
+}
+
+.deposit{
+    border-radius: 5px;
+padding: 20px;
+margin:0 20px;
+  background-color: slateblue;
+  color: white;
+}
+.withdraw{
+    padding: 20px;
+    margin:0 20px;
+    background-color: lightsalmon;
+    color: white;
+    border-radius: 5px;
+}
+.balance{
+    padding: 20px;
+    margin:0 20px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+}
+
+#input-area{
+    padding: 0 20px;
+    display: none;
+    margin-top: 5%;
+}
+
+.Dep-in{
+    padding: 70px;
+    margin-top: 7%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+.With-out{
+    padding: 70px;
+    margin-top: 7%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
