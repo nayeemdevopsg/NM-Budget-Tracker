@@ -77,18 +77,42 @@
    document.getElementById('tracker-area').style.display= "block";
    document.getElementById('input-area').style.display = "block";
     })
+document.getElementById('dp').addEventListener('click', function(){
+const deposit = document.getElementById('dp-am').value;
+const depositNumber = parseFloat(deposit);
+update("bl-tl", depositNumber);
+update("dp-tl", depositNumber);
 
-document.getElementById('dp').addEventListener('click', function(event){
-const depAm = document.getElementById('dp-am').value;
-const covertDepAm = parseFloat(depAm);
-
-
+function update(id, depositNumber){
+const current = document.getElementById(id).innerText;
+const currentNumber = parseFloat(current);
+const total = currentNumber + depositNumber;
+document.getElementById(id).innerText = total;
+}
+document.getElementById('dp-am').value = "";
 })
 
+document.getElementById('wt').addEventListener('click', function(){
+const withdraw = document.getElementById('wt-am').value;
+const withdrawNumber = parseFloat(withdraw);
+withdrawn("wt-tl", withdrawNumber );
+witBalance("bl-tl", withdrawNumber );
 
+function withdrawn(id, withdrawNumber){
+const current = document.getElementById(id).innerText;
+const currentNumber = parseFloat(current);
+const total = currentNumber + withdrawNumber;
+document.getElementById(id).innerText = total;
+    }
+function witBalance(id, withdrawNumber){
+const current = document.getElementById(id).innerText;
+const currentNumber = parseFloat(current);
+const total = currentNumber - withdrawNumber;
+document.getElementById(id).innerText = total;
+}
+    document.getElementById('wt-am').value = "";
+})
 </script>
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
